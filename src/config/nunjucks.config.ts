@@ -17,7 +17,7 @@ const templates = new nunjucks.Environment(
 // Add global variables
 templates.addGlobal('siteName', Configuration.get('app.name'));
 templates.addGlobal('siteUrl', Configuration.get('app.url'));
-templates.addGlobal('supportEmail', Configuration.get('app.contact.email'));
+templates.addGlobal('supportEmail', Configuration.get('contact.email'));
 templates.addGlobal('currentYear', new Date().getFullYear().toString());
 
 // // Add custom filter

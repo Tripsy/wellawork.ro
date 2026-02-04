@@ -22,7 +22,7 @@
 	"scripts": {
 		"dev": "next dev -p 80 --turbopack",
 		"build": "next build",
-		"start": "next start -p 80",
+		"start": "PORT=80 node .next/standalone/server.js",
 		"biome": "NODE_OPTIONS=--no-deprecation biome check --write",
 		"madge": "madge --circular src"
 	},

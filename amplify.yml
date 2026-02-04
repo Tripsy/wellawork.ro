@@ -1,0 +1,34 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - nvm install 22
+        - nvm use 22
+        - corepack enable
+        - pnpm install
+        - echo "NODE_ENV=$NODE_ENV"
+    build:
+      commands:
+        - echo "🚀 Starting build"
+        - pnpm run build || echo "⚠️ Build failed"
+        - echo "✅ Build finished"
+        # 👇 Debug output
+        - echo "📂 Listing root directory"
+        - ls -la
+        - echo "📂 Listing .next"
+        - ls -la .next || echo "⚠️ .next missing"
+        - echo "📂 Listing .next/server"
+        - ls -la .next/server || echo "⚠️ .next/server missing"
+        - echo "📂 Listing .next/server/pages"
+        - ls -la .next/server/pages || echo "⚠️ .next/server/pages missing"
+        - echo "📂 Listing .next/static"
+        - ls -la .next/static || echo "⚠️ .next/static missing"
+  artifacts:
+    baseDirectory: .next
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
+      - .pnpm-store/**/*
