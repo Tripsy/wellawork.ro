@@ -46,7 +46,7 @@ docker compose up
 Once the container is running, connect to it with:
 
 ```
-docker exec -it wellawork.test/bin/bash
+docker exec -it wellatwork.test/bin/bash
 ```
 
 ### 4. Install dependencies inside the container

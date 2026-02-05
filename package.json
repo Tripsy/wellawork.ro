@@ -1,5 +1,5 @@
 {
-	"name": "wellawork.ro",
+	"name": "wellatwork.ro",
 	"version": "1.0.0",
 	"description": "Presentation website for WellaWork.ro",
 	"keywords": [
@@ -9,9 +9,9 @@
 	],
 	"author": "Gabriel David",
 	"license": "GNU",
-	"homepage": "https://github.com/Tripsy/wellawork.test#readme",
+	"homepage": "https://github.com/Tripsy/wellatwork.test#readme",
 	"bugs": {
-		"url": "https://github.com/Tripsy/wellawork.test/issues"
+		"url": "https://github.com/Tripsy/wellatwork.test/issues"
 	},
 	"type": "module",
 	"packageManager": "pnpm@10.28.2",

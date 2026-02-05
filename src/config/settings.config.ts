@@ -27,15 +27,15 @@ function loadSettings(): Settings {
 				.trim()
 				.split(','),
 			environment: process.env.NODE_ENV || 'development',
-			url: process.env.NEXT_PUBLIC_APP_URL || 'http://wellawork.test',
+			url: process.env.NEXT_PUBLIC_APP_URL || 'http://wellatwork.test',
 			name: process.env.NEXT_PUBLIC_APP_NAME,
 		},
 		security: {
 			allowedOrigins: process.env.ALLOWED_ORIGINS?.split(',').map((v) =>
 				v.trim(),
 			) || [
-				'https://wellawork.ro',
-				'http://wellawork.test',
+				'https://wellatwork.ro',
+				'http://wellatwork.test',
 				'https://main.djcyuviv678xz.amplifyapp.com',
 			],
 		},

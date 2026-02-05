@@ -1,6 +1,6 @@
 services:
     node:
-        container_name: wellawork.test
+        container_name: wellatwork.test
         ports:
             - "80:80"
         build:

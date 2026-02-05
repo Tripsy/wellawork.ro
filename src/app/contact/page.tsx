@@ -60,10 +60,10 @@ const Page = async () => {
 													Email
 												</p>
 												<a
-													href="mailto:contact@wellawork.ro"
+													href="mailto:contact@wellatwork.ro"
 													className="text-muted-foreground hover:text-primary transition-colors"
 												>
-													contact@wellawork.ro
+													contact@wellatwork.ro
 												</a>
 											</div>
 										</div>
